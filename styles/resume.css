@@ -1,0 +1,1024 @@
+/* common styles */
+.divider {
+  background-color: #474747;
+  height: 1px;
+  margin: 8px 30px 16px 30px;
+}
+
+.borderlessInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: medium;
+  border-bottom: 1px solid #474747;
+}
+
+.popupSaveButton {
+  height: 40px;
+  width: 80px;
+  background-color: #d74cf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.popupCancelButton {
+  height: 34px;
+  width: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 3px solid #d74cf6;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.popupCancelButton p {
+  font-weight: bold;
+  color: #0e1217;
+}
+
+.popupSaveButton p {
+  font-weight: bold;
+  color: #e8e8e8;
+}
+
+.popupButtonContainer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile details */
+* {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  background: linear-gradient(to bottom right, black, #5a2068);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/* .profileContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.profileContent h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+.profile {
+  background-color: #0e1217;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.profileImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #d74cf6;
+}
+
+#camera {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
+  transform: translateX(-20px);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+#camera:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+#names {
+  color: #e8e8e8;
+  margin-right: 20px;
+  margin-left: 8px;
+}
+
+.profileInformation {
+  display: flex;
+  flex-direction: row;
+}
+
+.profileInformation div {
+  flex: 1;
+}
+
+.profileInformation div div {
+  display: flex;
+  flex-direction: row;
+}
+
+#infoPencil {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#infoPencil:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+.profileTable {
+  transform: translateX(8px);
+}
+
+.profileTable tr td {
+  font-size: 18px;
+  color: #c3c3c3;
+}
+
+.about {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.aboutText {
+  color: #e8e8e8;
+}
+
+#aboutTextValue {
+  color: #e8e8e8;
+}
+
+#aboutTextPlaceholder {
+  color: #b0b0b0;
+}
+
+#aboutInput {
+  color: white;
+  background-color: transparent;
+  display: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+.aboutFrame {
+  min-height: 100px;
+  border: 1px solid #474747;
+  border-radius: 10px;
+  flex: 1;
+  padding: 8px;
+}
+
+.aboutFrame p {
+  font-size: 18px;
+  color: #c3c3c3;
+}
+
+.about div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#AboutPencil {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#AboutPencil:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+#saveAbout {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Profile details pop-up */
+#profilePopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#profilePopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.profileForm Table {
+  width: 100%;
+}
+
+.profileForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+/* Education */
+.educationContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* .educationContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.education {
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.educationContent div h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+.educationContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.educationItem {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+}
+
+.educationInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.varsityIcon {
+  height: 35px;
+  width: 35px;
+}
+
+.educationInfo {
+  margin-left: 8px;
+}
+
+.educationInfo h3 {
+  color: #e8e8e8;
+}
+
+.educationInfo p {
+  margin-top: 4px;
+  color: #b7b3b3;
+}
+
+.education ul {
+  padding-left: 0;
+  flex: 1;
+}
+
+.education ul li {
+  list-style: none;
+}
+
+#addEducation {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#addEducation:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+.editDelete {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: end;
+}
+
+.educationEdit {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.educationDelete {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#educationPlaceholderText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px dashed #474747;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#educationPlaceholderText h2 {
+  color: #b7b3b3;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#educationPlaceholderText img {
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+/* Education pop-up */
+#educationPopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#educationPopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.educationForms Table {
+  width: 100%;
+}
+
+.educationForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Work experience */
+.experienceContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* .experienceContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.experience {
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.experienceContent div h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+.experienceContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experienceItem {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+}
+
+.experienceInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.experienceIcon {
+  height: 35px;
+  width: 35px;
+}
+
+.experienceInfo {
+  margin-left: 8px;
+}
+
+.experienceInfo h3 {
+  color: #e8e8e8;
+}
+
+.experienceInfo p {
+  margin-top: 4px;
+  color: #b7b3b3;
+}
+
+.experience ul {
+  padding-left: 0;
+  flex: 1;
+}
+
+.experience ul li {
+  list-style: none;
+}
+
+#addWorkExperience {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#addWorkExperience:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+.editDelete {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: end;
+}
+
+.experienceEdit {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.experienceDelete {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#workExperiencePlaceholderText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px dashed #474747;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#workExperiencePlaceholderText h2 {
+  color: #b7b3b3;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#workExperiencePlaceholderText img {
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+/* Work Experience pop-up */
+#experiencePopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#experiencePopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.experienceForm Table {
+  width: 100%;
+}
+
+.experienceForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Certification */
+.certificationContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* .certificationContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.certification {
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.certificationContent div h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+.certificationContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.certificationItem {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+}
+
+.certificationInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.certificationIcon {
+  height: 35px;
+  width: 35px;
+}
+
+.certificationInfo {
+  margin-left: 8px;
+}
+
+.certificationInfo h3 {
+  color: #e8e8e8;
+}
+
+.certificationInfo p {
+  margin-top: 4px;
+  color: #b7b3b3;
+}
+
+.certification ul {
+  padding-left: 0;
+  flex: 1;
+}
+
+.certification ul li {
+  list-style: none;
+}
+
+#addCertification {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#addCertification:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+.editDelete {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: end;
+}
+
+.certificationEdit {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.certificationDelete {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#certificationPlaceholderText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px dashed #474747;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#certificationPlaceholderText img {
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+#certificationPlaceholderText h2 {
+  color: #b7b3b3;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* Certification pop-up */
+#certificationPopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#certificationPopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.certificationForm Table {
+  width: 100%;
+}
+
+.certificationForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Skills */
+.skillsContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* .skillsContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.skills {
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.skillsContent div h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+.skillsContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skillsItem {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+}
+
+.skillsInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.varsityIcon {
+  height: 35px;
+  width: 35px;
+}
+
+.skillsInfo {
+  margin-left: 8px;
+}
+
+.skillsInfo h3 {
+  color: #e8e8e8;
+}
+
+.skillsInfo p {
+  margin-top: 4px;
+  color: #b7b3b3;
+}
+
+.skills ul {
+  padding-left: 0;
+  flex: 1;
+}
+
+.skills ul li {
+  list-style: none;
+}
+
+#addSkill {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#addSkill:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+.editDelete {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: end;
+}
+
+.skillsEdit {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.skillsDelete {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#skillsPlaceholderText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px dashed #474747;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#skillsPlaceholderText h2 {
+  color: #b7b3b3;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#skillsPlaceholderText img {
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+/* Skill pop-up */
+#skillPopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#skillPopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.skillForm Table {
+  width: 100%;
+}
+
+.skillForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Projects */
+.projectContent {
+  background-color: #0e1217;
+  width: 75%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* .projectContent:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px grey;
+} */
+
+.projectContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects {
+  margin: 8px;
+  border-radius: 8px;
+}
+.projectItem {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+}
+.projectInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#addProject {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#addProject:hover {
+  box-shadow: 0px 4px 15px grey;
+}
+
+.projectInfo {
+  margin-left: 8px;
+}
+.projectInfo h3 {
+  color: #e8e8e8;
+}
+.projectInfo p {
+  margin-top: 4px;
+  color: #b7b3b3;
+}
+.project ul {
+  padding-left: 0;
+  flex: 1;
+}
+
+.project ul li {
+  list-style: none;
+}
+.projectContentHeader h1 {
+  margin: 8px 0px 20px 8px;
+  color: #e8e8e8;
+}
+
+#projectsPlaceholderText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px dashed #474747;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#projectsPlaceholderText h2 {
+  color: #b7b3b3;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#projectsPlaceholderText img {
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+/* Project pop-up */
+#projectPopUp {
+  width: 500px;
+  background-color: #0e1217;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 4px 8px grey;
+  display: none;
+}
+
+#projectPopUp h2 {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.projectForm Table {
+  width: 100%;
+}
+
+.projectForm Table tr td {
+  font-weight: bold;
+  color: #b7b3b3;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+}

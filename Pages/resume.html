@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<head>
+    <title>Resume</title>
+    <link rel="Stylesheet" href="../styles/resume.css" />
+</head>
+<body>
+   <div class="main">
+    <!-- Profile details -->
+    <div class="profileContent">
+        <h1>Profile Details</h1>
+        <div class="profile">
+            <div class="imageContainer">
+                <img class="profileImage" src="../images/imagePlaceholder.png" id="image"/>
+                <img src="../images/camera.png" id="camera"/>
+            </div>
+            <div class="profileInformation">
+                <div>
+                    <div>
+                        <h2 id="names"></h2>
+                        <img src="../images/pencil.png" id="infoPencil"/>
+                    </div>
+                    <table class="profileTable">
+                        
+                        <tr>
+                            <td>Cell number:</td>
+                            <td id="cellphoneNo"></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Email Address:</td>
+                            <td id="emailInput"></td>
+                        </tr> -->
+                        <tr>
+                            <td>Gender:</td>
+                            <td id="ProfileGender"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Date of birth:</td>
+                            <td id="dateOfBirth"></td>
+                        </tr>
+                        <tr>
+                            <td>Identification No:</td>
+                            <td id="identificationNo"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Address:</td>
+                            <td id="addressText"></td>
+                        </tr>
+                    </table> 
+                </div>
+                
+                <div class="about">
+                    <div>
+                        <h2 class="aboutText">About</h2>
+                        <img src="../images/pencil.png" id="AboutPencil"/>
+                        <img src="../images/save.png" id="saveAbout"/>
+                    </div>
+                    <div class="aboutFrame">
+                        <textarea id="aboutInput" rows="4"></textarea>
+                        <p id="aboutTextValue"></p>
+                        <p id="aboutTextPlaceholder">Add about...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- profile details pop-up -->
+    <div id="profilePopUp">
+        <h2>Edit Profile details</h2>
+        <div class="divider"></div>
+        <div class="profileForm">
+            <Table style="border-spacing: 16px;">
+
+
+                
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" class="borderlessInput" id="phoneNumberInput" name="PhoneNumber"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="text" class="borderlessInput" id="genderInput" name="Gender"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date" class="borderlessInput" id="dateOfBirthInput" name="dateOfBirth"></td>
+                </tr>
+                <tr>
+                    <td>ID Number:</td>
+                    <td><input type="text" class="borderlessInput" id="idNumberInput" name="idNumber"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" class="borderlessInput" id="addressInput" name="Address"></td>
+                </tr>
+            </Table>
+            <div class="popupButtonContainer">
+                <div class="popupCancelButton" id="profileCancelButton">
+                    <p>Cancel</p>
+                </div>
+                <div class="popupSaveButton" id="profileSaveButton">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Education -->
+    <div class="educationContent">
+        <div class="educationContentHeader">
+            <h1>Education</h1>
+            <img src="../images/add.png" id="addEducation"/>
+        </div>
+        <div class="education">
+            <ul id="educationList">
+                <li id="educationPlaceholderText">
+                    <img src="../images/emptyEducation.png" />
+                    <h2>Click (+) button to add educations</h2>
+                </li>
+                <!-- <li>
+                    <div class="educationItem">
+                        <div class="educationInfoContainer">
+                            <img src="../images/university.png" class="varsityIcon"/>
+                            <div class="educationInfo">
+                                <h3>University of Limpopo</h3>
+                                <p>Bsc - Computer Science</p>
+                                <p>December 2018</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="educationEdit"/>
+                             <img src="../images/trash.png" class="educationDelete"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="educationItem">
+                        <div class="educationInfoContainer">
+                            <img src="../images/university.png" class="varsityIcon"/>
+                            <div class="educationInfo">
+                                <h3>S.J Van Der Merwe</h3>
+                                <p>Science stream</p>
+                                <p>December 2015</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="educationEdit"/>
+                            <img src="../images/trash.png" class="experienceDelete"/>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education pop-up -->
+    <div id="educationPopUp">
+        <h2>Add Education</h2>
+        <div class="divider"></div>
+        <div class="educationForm">
+            <Table style="border-spacing: 16px;">
+                <tr>
+                    <td>Institution:</td>
+                    <td><input type="text" class="borderlessInput" id="institutionInput" name="Institution"></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td><input type="text" class="borderlessInput" id="qualificationInput" name="Qualification"></td>
+                </tr>
+                <tr>
+                    <td>Graduation Date:</td>
+                    <td><input type="month" class="borderlessInput" id="graduationDate" name="GraduationDate"></td>
+                </tr>
+            </Table>
+            <div class="popupButtonContainer">
+                <div class="popupCancelButton" id="educationCancelButton">
+                    <p>Cancel</p>
+                </div>
+                <div class="popupSaveButton" id="educationSaveButton">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="experienceContent">
+        <div class="experienceContentHeader">
+            <h1>Work Experience</h1>
+            <img src="../images/add.png" id="addWorkExperience"/>
+        </div>
+        <div class="experience">
+            <ul id="workExperienceList">
+                <li id="workExperiencePlaceholderText">
+                    <img src="../images/noWork.png"/>
+                    <h2>Click (+) button to add work experiences</h2>
+                </li>
+                <!-- <li>
+                    <div class="experienceItem">
+                        <div class="experienceInfoContainer">
+                            <img src="../images/google_logo.png" class="varsityIcon"/>
+                            <div class="experienceInfo">
+                                <h3>Software Engineer</h3>
+                                <p>Google</p>
+                                <p>July 2022 - Present</p>
+                                <p>Building E, Ballyoaks Office Park, 35 Ballyclare Dr, Johannesburg, 2021</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="experienceEdit"/>
+                            <img src="../images/trash.png" class="experienceDelete"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experienceItem">
+                        <div class="experienceInfoContainer">
+                            <img src="../images/huawei_logo.png" class="experienceIcon"/>
+                            <div class="experienceInfo">
+                                <h3>Huawei</h3>
+                                <p>Software Developer</p>
+                                <p>January 2019 - June 2022</p>
+                                <p>No. 124 Western Service Rd, Woodmead, Johannesburg, 2191</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="experienceEdit"/>
+                            <img src="../images/trash.png" class="experienceDelete"/>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Work Experience pop-up -->
+    <div id="experiencePopUp">
+        <h2>Add Work Experience</h2>
+        <div class="divider"></div>
+        <div class="experienceForm">
+            <Table style="border-spacing: 16px;">
+                <tr>
+                    <td>Job Title:</td>
+                    <td><input type="text" class="borderlessInput" id="jobTitleInput" name="JobTitle"></td>
+                </tr>
+                <tr>
+                    <td>Company Name:</td>
+                    <td><input type="text" class="borderlessInput" id="companyNameInput" name="CompanyName"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" class="borderlessInput" id="companyAddressInput" name="Address"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tableRow">
+                            <p>Start Date: </p>
+                            <input type="month" class="borderlessInput" id="workStartDateInput" name="WorkStartDate">
+                        </div>
+                    </td>
+                    <td>
+                         <div class="tableRow">
+                            <p>End Date:</p>
+                            <input type="month" class="borderlessInput" id="workEndDateInput" name="WorkEndDate">
+                        </div>
+                    </td>
+                </tr>
+            </Table>
+            <div class="popupButtonContainer">
+                <div class="popupCancelButton" id="workExperienceCancelButton">
+                    <p>Cancel</p>
+                </div>
+                <div class="popupSaveButton" id="workExperienceSaveButton">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Certification -->
+    <div class="certificationContent">
+        <div class="certificationContentHeader">
+            <h1>Certifications</h1>
+            <img src="../images/add.png" id="addCertification"/>
+        </div>
+        <div class="certification">
+            <ul id="certificationList">
+                <li id="certificationPlaceholderText">
+                    <img src="../images/noCertification.png" />
+                    <h2>Click (+) button to add certifications</h2>
+                </li>
+                <!-- <li>
+                    <div class="certificationItem">
+                        <div class="certificationInfoContainer">
+                            <img src="../images/codecardemy.png" class="certificationIcon"/>
+                            <div class="certificationInfo">
+                                <h3>Advance React</h3>
+                                <p>Codecademy</p>
+                                <p>December 2017</p>
+                                <a href="#">View Attachment</a>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="certificationEdit"/>
+                            <img src="../images/trash.png" class="certificationDelete"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="certificationItem">
+                        <div class="certificationInfoContainer">
+                            <img src="../images/udemy.png" class="certificationIcon"/>
+                            <div class="certificationInfo">
+                                <h3>JavaScript</h3>
+                                <p>Udemy</p>
+                                <p>December 2016</p>
+                                <a href="#">View Attachment</a>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="certificationEdit"/>
+                            <img src="../images/trash.png" class="certificationDelete"/>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certification pop-up -->
+    <div id="certificationPopUp">
+        <h2>Add Certification</h2>
+        <div class="divider"></div>
+        <div class="certificationForm">
+            <Table style="border-spacing: 16px;">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" class="borderlessInput" id="certificationNameInput" name="CertificationName"></td>
+                </tr>
+                <tr>
+                    <td>Issued organisation:</td>
+                    <td><input type="text" class="borderlessInput" id="issuedOrganisationInput" name="issuedOrganisation"></td>
+                </tr>
+                <tr>
+                    <td>Certification Date:</td>
+                    <td><input type="month" class="borderlessInput" id="certificationDateInput" name="CertificationDate"></td>
+                </tr>
+            </Table>
+            <div class="popupButtonContainer">
+                <div class="popupCancelButton" id="certificationCancelButton">
+                    <p>Cancel</p>
+                </div>
+                <div class="popupSaveButton" id="certificationSaveButton">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skillsContent">
+        <div class="skillsContentHeader">
+            <h1>Skills</h1>
+            <img src="../images/add.png" id="addSkill"/>
+        </div>
+        <div class="skills">
+            <ul id="skillList">
+                <li id="skillsPlaceholderText">
+                    <img src="../images/noSkill.png" />
+                    <h2>Click (+) button to add skills</h2>
+                </li>
+                <!-- <li>
+                    <div class="skillsItem">
+                        <div class="skillsInfoContainer">
+                            <div class="skillsInfo">
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="skillsEdit"/>
+                            <img src="../images/trash.png" class="skillsDelete"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skillsItem">
+                        <div class="skillsInfoContainer">
+                            <div class="skillsInfo">
+                                <h3>JavaScript</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="skillsEdit"/>
+                            <img src="../images/trash.png" class="skillsDelete"/>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skill pop-up -->
+    <div id="skillPopUp">
+        <h2>Add Skill</h2>
+        <div class="divider"></div>
+        <div class="skillForm">
+            <Table style="border-spacing: 16px;">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" class="borderlessInput" id="skillNameInput" name="SkillName"></td>
+                </tr>
+                <tr>
+                    <td>Proficiency Level:</td>
+                    <td><input type="text" class="borderlessInput" id="proficiencyLevelInput" name="ProficiencyLevel"></td>
+                </tr>
+            </Table>
+            <div class="popupButtonContainer">
+                <div class="popupCancelButton" id="skillCancelButton">
+                    <p>Cancel</p>
+                </div>
+                <div class="popupSaveButton" id="skillSaveButton">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Projects -->
+     <div class="projectContent">
+        <div class="projectContentHeader">
+            <h1>Projects</h1>
+            <img src="../images/add.png" id="addProject"/>
+        </div>
+        <div class="project">
+            <ul id="projectList">
+                <li id="projectsPlaceholderText">
+                    <img src="../images/noProject.png" />
+                    <h2>Click (+) button to add projects</h2>
+                </li>
+                <!-- <li>
+                    <div class="projectItem">
+                        <div class="projectInfoContainer">
+                            <img src="../images/project.png" class="certificationIcon"/>
+                            <div class="certificationInfo">
+                                <h3>ToDo List: React</h3>
+                                <p>Github</p>
+                                <p>September 2022</p>
+                                <a href="#">View Project</a>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="certificationEdit"/>
+                            <img src="../images/trash.png" class="certificationDelete"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="projectItem">
+                        <div class="projectInfoContainer">
+                            <img src="../images/project.png" class="certificationIcon"/>
+                            <div class="projectInfo">
+                                <h3> Calculator app: Javascript</h3>
+                                <p>Github</p>
+                                <p>July 2022</p>
+                                <a href="#">View Project</a>
+                            </div>
+                        </div>
+                        <div class="editDelete">
+                            <img src="../images/pencil.png" class="certificationEdit"/>
+                            <img src="../images/trash.png" class="certificationDelete"/>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+<!-- Project pop-up -->
+<div id="projectPopUp">
+    <h2>Add Project</h2>
+    <div class="divider"></div>
+    <div class="projectForm">
+        <Table style="border-spacing: 16px;">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" class="borderlessInput" id="projectNameInput" name="ProjectName"></td>
+            </tr>
+            <tr>
+                <td>Repo Container:</td>
+                <td><input type="text" class="borderlessInput" id="repoContainerInput" name="RepoContainer"></td>
+            </tr>
+            <tr>
+                <td>Repo Link:</td>
+                <td><input type="text" class="borderlessInput" id="repoLinkInput" name="RepoLinkLevel"></td>
+            </tr>
+            <tr>
+                <td>Completed On:</td>
+                <td><input type="month" class="borderlessInput" id="completedOnInput" name="completedOn"></td>
+            </tr>
+        </Table>
+        <div class="popupButtonContainer">
+            <div class="popupCancelButton" id="projectCancelButton">
+                <p>Cancel</p>
+            </div>
+            <div class="popupSaveButton" id="projectSaveButton">
+                <p>Save</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+   </div>
+
+   
+   <script src="../scripts/resume.js"></script>
+   <script src="./../scripts/createResume.js"></script>
+</body>
+</html>

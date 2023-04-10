@@ -1,0 +1,8 @@
+background-color: #0E1217
+
+text color: #E8E8E8
+light text color: #b7b3b3
+
+frame border color: #474747
+
+accent color: D74CF6

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Authentication</title>
+    <link rel="Stylesheet" href="../styles/authentication.css" /><script
+    src="https://kit.fontawesome.com/19f078026a.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <div class="main">
+    <div class="form-box">
+      <h1 id="title">Sign Up</h1>
+      <form id="signInForm">
+      
+        <div class="input-group">
+
+          <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name" id="nameInput"/>
+          </div>
+
+          <div class="input-field" id="surnameField">
+            <i class="fa-solid fa-user"></i>
+            
+            <input type="text" placeholder="Surname" id="surnameInput"/>
+          </div>
+
+          <div class="input-field" id="usernameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="username" id="usernameInput"/>
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email" id="emailInput"/>
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" id="passwordInput"/>
+          </div>
+          <!-- <p>Forgot Password <a href="#">Click Here!</a></p> -->
+        </div>
+        <div class="btn-field">
+          <button type="button" id="signupBtn">Sign up</button>
+          <button type="button" id="signinBtn" class="disable">
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="alertPopupContainer">
+      <div class="alertPopup">
+        <h2>Alert!</h2>
+        <div class="divider"></div>
+        <p class="alertpopUpText">Please fill all the fields</p>
+        <div class="pressableTextContainer">
+          <p id="pressableText">OK</p>
+        </div>
+      </div>
+    </div>
+    <div id="successAlertPopupContainer">
+      <div class="alertPopup"> 
+        <h2>Success!</h2>
+        <div class="divider"></div>
+        <p class="alertpopUpText" id="SuccessText"></p>
+        <div class="pressableTextContainer">
+          <p id="successPressableText">OK</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./../scripts/authentication.js" >
+    </script>
+</body>
+
+</html>

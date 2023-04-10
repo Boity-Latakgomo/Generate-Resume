@@ -1,0 +1,7 @@
+name
+surname
+
+Gender
+id no => date of birth
+cellphone no
+address
